@@ -11,35 +11,37 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Team A"
         android:gravity="center_horizontal"
         android:padding="4dp"
-        />
+        android:text="Team A" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0"
         android:gravity="center_horizontal"
         android:padding="4dp"
-        />
+        android:text="0" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="+3Points"
+        android:layout_margin="8dp"
         android:onClick="addTreePoints"
-        />
+        android:text="+3Points" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="+2Points"
+        android:layout_margin="8dp"
         android:onClick="addTwoPoints"
-        />
+        android:text="+2Points" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="+Free Throw"
+        android:layout_margin="8dp"
         android:onClick="addFreeThrow"
-        />
+        android:text="+Free Throw" />
 
 
 </LinearLayout>
