@@ -13,12 +13,14 @@
         android:layout_height="wrap_content"
         android:text="Team A"
         android:gravity="center_horizontal"
+        android:padding="4dp"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="0"
         android:gravity="center_horizontal"
+        android:padding="4dp"
         />
     <Button
         android:layout_width="match_parent"
