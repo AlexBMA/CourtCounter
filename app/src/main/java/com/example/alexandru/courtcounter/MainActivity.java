@@ -13,28 +13,28 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        display();
+        displayForTeamA();
     }
 
-    public void display()
+    public void displayForTeamA()
     {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
 
-    public void addTreePoints(View view)
+    public void addTreePointsForTeamA(View view)
     {
         score +=3;
-        display();
+        displayForTeamA();
     }
-    public void addTwoPoints(View view)
+    public void addTwoPointsForTeamA(View view)
     {
         score +=2;
-        display();
+        displayForTeamA();
     }
-    public void addFreeThrow(View view)
+    public void addFreeThrowForTeamA(View view)
     {
         score+=1;
-        display();
+        displayForTeamA();
     }
 }
