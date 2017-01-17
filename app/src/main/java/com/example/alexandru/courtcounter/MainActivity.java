@@ -7,34 +7,84 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int score = 0 ;
+    int scoreTeamA = 0 ;
+    int scoreTeamB = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         displayForTeamA();
+        displayForTeamB();
     }
-
+    /**
+     * Displays the given score for Team A.
+     */
     public void displayForTeamA()
     {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
-        scoreView.setText(String.valueOf(score));
+        scoreView.setText(String.valueOf(scoreTeamA));
     }
 
+    /**
+     * Displays the given score for Team B.
+     */
+    public void displayForTeamB() {
+        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
+        scoreView.setText(String.valueOf(scoreTeamB));
+    }
+    /**
+        Adds 3 points for team A
+
+     */
     public void addTreePointsForTeamA(View view)
     {
-        score +=3;
+        scoreTeamA +=3;
         displayForTeamA();
     }
+
+    /**
+        Add 2 points for team B
+
+     */
     public void addTwoPointsForTeamA(View view)
     {
-        score +=2;
+        scoreTeamA +=2;
         displayForTeamA();
     }
+    /**
+     Add 1 point for team B
+
+     */
     public void addFreeThrowForTeamA(View view)
     {
-        score+=1;
+        scoreTeamA +=1;
         displayForTeamA();
+    }
+    /**
+     Adds 3 points for team B
+     */
+    public void addTreePointsForTeamB(View view)
+    {
+        scoreTeamB +=3;
+        displayForTeamB();
+    }
+    /**
+     Add 2 points for team B
+
+     */
+    public void addTwoPointsForTeamB(View view)
+    {
+        scoreTeamB +=2;
+        displayForTeamB();
+    }
+    /**
+     Add 1 point for team B
+
+     */
+    public void addFreeThrowForTeamB(View view)
+    {
+        scoreTeamB +=1;
+        displayForTeamB();
     }
 }
