@@ -7,31 +7,34 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int totalPoints=0;
+    int score = 0 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        display();
     }
 
-    public void display(View view)
+    public void display()
     {
-        TextView score;
-
-
+        TextView scoreView = (TextView) findViewById(R.id.team_a_score);
+        scoreView.setText(String.valueOf(score));
     }
 
-    public void addTreePoints()
+    public void addTreePoints(View view)
     {
-        totalPoints +=3;
+        score +=3;
+        display();
     }
-    public void addTwoPoints()
+    public void addTwoPoints(View view)
     {
-        totalPoints +=2;
+        score +=2;
+        display();
     }
-    public void addFreeThrow()
+    public void addFreeThrow(View view)
     {
-        totalPoints+=1;
+        score+=1;
+        display();
     }
 }
